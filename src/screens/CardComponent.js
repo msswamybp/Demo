@@ -31,7 +31,7 @@ class CardComponent extends Component {
                     }}
                     onPress={() => this.props.navigation.navigate('HomeDetaile', {
                         name: this.props.name,
-                        images: this.props.icom,
+                        images: this.props.icon,
                         rating: this.props.rating,
                         scope: this.props.scope,
                         business_status: this.props.business_status,
@@ -47,7 +47,9 @@ class CardComponent extends Component {
                         />
                         <View style={{
                             flexDirection: 'column',
-                            alignItems: 'center', justifyContent: 'center',
+                            alignItems: 'flex-start', justifyContent: 'center',
+                            marginLeft: Dimensions.get('window').width * 0.02,
+
                         }}>
                             <View style={{
                                 flexDirection: 'row'

@@ -56,41 +56,43 @@ class HomeDetaile extends Component {
                             width: Dimensions.get('window').width * 0.75, height: Dimensions.get('window').height * 0.4
                             , resizeMode: 'contain', alignSelf: 'center'
                         }}
-                        source={{ uri: this.props.navigation.state.params.icon }}
+                        source={{ uri: this.props.navigation.state.params.images }}
                     />
-                    <View>
+                    <View style={{ marginLeft: Dimensions.get('window').width * 0.1 }}>
                         <Text style={{
-                            alignItems: 'center', justifyContent: 'center', alignSelf: 'center', fontWeight: 'bold'
+                            alignItems: 'flex-start', justifyContent: 'center', fontWeight: 'bold'
                         }}>
                             name:{this.props.navigation.state.params.name}
                         </Text>
                     </View>
-                    <View>
+                    <View style={{ marginLeft: Dimensions.get('window').width * 0.1 }}>
                         <Text style={{
-                            alignItems: 'center', justifyContent: 'center', alignSelf: 'center', fontWeight: 'bold'
+                            alignItems: 'flex-start', justifyContent: 'center', fontWeight: 'bold'
                         }}>
                             business_status: {this.props.navigation.state.params.business_status}
                         </Text>
                     </View>
-                    <View>
+                    <View style={{ marginLeft: Dimensions.get('window').width * 0.1 }}>
                         <Text style={{
-                            alignItems: 'center', justifyContent: 'center', alignSelf: 'center', fontWeight: 'bold'
+                            alignItems: 'flex-start', justifyContent: 'center', fontWeight: 'bold'
                         }}>
                             user_ratings_total:  {this.props.navigation.state.params.user_ratings_total}
                         </Text>
                     </View>
-                    <View>
+                    <View style={{ marginLeft: Dimensions.get('window').width * 0.1 }}>
                         <Text style={{
-                            alignItems: 'center', justifyContent: 'center', alignSelf: 'center', fontWeight: 'bold'
+                            alignItems: 'flex-start', justifyContent: 'center', fontWeight: 'bold'
                         }}>
                             scope:   {this.props.navigation.state.params.scope}
                         </Text>
                     </View>
-                    <Text style={{
-                        alignItems: 'center', justifyContent: 'center', alignSelf: 'center', fontWeight: 'bold'
-                    }}>
-                        rating: {this.props.navigation.state.params.rating}
-                    </Text>
+                    <View style={{ marginLeft: Dimensions.get('window').width * 0.1 }}>
+                        <Text style={{
+                            alignItems: 'flex-start', justifyContent: 'center', fontWeight: 'bold'
+                        }}>
+                            rating: {this.props.navigation.state.params.rating}
+                        </Text>
+                    </View>
                 </ScrollView>
             </View>
         );
